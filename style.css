@@ -81,7 +81,7 @@
 .header-pic {
     flex-grow: 1;
     border-width: 5px;
-    margin-left: 20px;
+    margin-left: 16%;
     flex-basis: 100%;
 }
 
@@ -93,7 +93,7 @@
 
 .header-info-container button {
     align-self: flex-start;
-    background-color: #1a2639 ; 
+    background-color: #000000 ; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -101,7 +101,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 15%;
+    border-radius: 5px;
 }
 
 .header-info-container button:hover {
@@ -131,16 +131,10 @@
     justify-content: center;
     padding-bottom: 100px;
     flex-wrap: wrap;
-}
 
-.Highlights-links figure {
-    justify-content: center;
+    height: 360px;
+    /* width: 640px; */
 }
-
-figcaption {
-    text-align: center;
-}
-
 
 .Highlights-links a {
     margin: 20px;
@@ -152,11 +146,27 @@ figcaption {
     border-radius: 5%;
     border: solid;
     border-color: #1a2639;
+
+    transition: transform .2s; /* Animation */
 }
 
-
 .Highlights-links img:hover {
-    opacity: 60%;
+    opacity: 75%;
+    transform: scale(1.2);
+}
+.Highlights-links figure {
+    justify-content: center;
+
+    transition: transform .2s; /* Animation */
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 20px;
+    transition: transform .2s; /* Animation */
+}
+figure:hover{
+    transform: scale(1.05);
 }
 
 
@@ -168,6 +178,7 @@ figcaption {
 }
 
 .quote-container h3 {
+    transition: transform .2s; /* Animation */
     margin-left: 75px;
     margin-right: 75px;
     text-align: center;
@@ -175,6 +186,10 @@ figcaption {
     font-style: italic;
     font-family: #1F2937;
     color: darkgrey;
+}
+
+.quote-container h3:hover{
+    transform: scale(1.1); 
 }
 
 .giyu {
@@ -231,10 +246,11 @@ footer{
     display: flex;
     height: 30px;
     background: #142d4c;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: right;
     margin-bottom: 0;
 }
 footer p{
     color: white;
+    margin-right: 50px;
 }
